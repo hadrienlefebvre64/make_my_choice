@@ -1,0 +1,26 @@
+example-container {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+#suprButton {
+  background-color: red;
+}
+
+#descInput {
+  list-style-image: none !important;
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+#coefInput {
+  width:72px !important;
+}
+
+#bottomButtons {
+  width: 100px;
+}
