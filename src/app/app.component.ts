@@ -34,14 +34,14 @@ export class AppComponent implements OnInit {
   onSlideChange(ob: MatSlideToggleChange) {
     ob.checked ? this.showCoef = true : this.showCoef = false;
 
-    if (!this.showCoef){
+    if (!this.showCoef) {
       for( let h = 0 ; h < this.choices.length ; h++) {
         this.choices[h].coefficient = null;
       }
     }
   }
 
-  onAddChoice(choice: ChoiceComponent) {
+  onAddChoice() {
 
     this.nbChoice++;
     let newChoice = new ChoiceComponent;

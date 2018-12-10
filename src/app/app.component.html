@@ -3,7 +3,7 @@
   <span>Make my choice</span>
 </mat-toolbar>
 <br>
-<img src="favicon.ico" height="200px" style="margin-left: 50px">
+<img src="favicon.ico" height="200px" style="margin-left: 60px">
 <h2>What's on your mind ?</h2>
 
 <div class="example-container">
@@ -12,10 +12,10 @@
 </div>
 
 
-<div>
+<div id="boday">
   <ul id="descInput">
     <li *ngFor="let choice of choices">
-      <mat-form-field>
+      <mat-form-field id="choiceInput">
         <input matInput placeholder="Choice {{choice.id}}" [(ngModel)]="choice.description">
       </mat-form-field>
       &nbsp;
@@ -36,15 +36,17 @@
 </div>
 <br>
 <br>
-<div>
-  <button id="bottomButtons" mat-stroked-button (click)="onCalculate()">Calculate</button>
-  <button id="bottomButtons" mat-stroked-button (click)="onReset()">Reset</button>
+<div id="buttonGroup">
+  <button id="bottomButtonsCalc" mat-stroked-button (click)="onCalculate()">Calculate</button>
+  <button id="bottomButtonsReset" mat-stroked-button (click)="onReset()">Reset</button>
 </div>
 
 <br>
-<div *ngIf="showChoice">
+<div *ngIf="showChoice" id="resultBloc">
   <span> Your choice is : </span>
   <br>
-  <span>{{finalChoice}}</span>
+  &nbsp;
+  &nbsp;
+  <span id="resultValue">{{finalChoice}} !</span>
 </div>
 

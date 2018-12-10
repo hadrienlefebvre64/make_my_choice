@@ -17,10 +17,42 @@ example-container {
   list-style-type: none !important;
 }
 
-#coefInput {
-  width:72px !important;
+#choiceInput {
+  width: 40% !important;;
+  text-align: left;
 }
 
-#bottomButtons {
+#coefInput {
+  width:20% !important;
+  text-align: left;
+}
+
+#bottomButtonsCalc {
   width: 100px;
+  float: left;
+  margin-left: 40px;
+}
+
+#bottomButtonsReset {
+  width: 100px;
+  float: right;
+  margin-right: 40px;
+}
+
+#boday {
+  width: 100%;
+}
+
+#buttonGroup {
+  margin-bottom: 50px;
+}
+
+#resultBloc {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#resultValue {
+  font-weight: bold;
+  color: midnightblue;
 }
